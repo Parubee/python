@@ -1,0 +1,29 @@
+heterogeneous_list = [
+    42,                      # Integer
+    3.14,                    # Float
+    "Python",                # String
+    True,                    # Boolean
+    [1, 2, 3],               # List
+    (4, 5, 6),               # Tuple
+    {"name": "Alice"},       # Dictionary
+    lambda x: x**2           # Function (Lambda)
+]
+#Accessing the elemets inside the list
+print (heterogeneous_list)
+print(heterogeneous_list[0])
+print(heterogeneous_list[1])
+print(heterogeneous_list[2])
+print(heterogeneous_list[3])
+print(heterogeneous_list[4])
+print(heterogeneous_list[5])
+print(heterogeneous_list[6])
+print(heterogeneous_list[7])
+
+
+# Accessing the function inside the list (Index 7)
+square_function = heterogeneous_list[7]  # Extracting function
+
+# Calling the function with an argument
+result = square_function(5)  # 5**2 = 25
+
+print(result)  # Output: 25
