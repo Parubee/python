@@ -1,0 +1,6 @@
+# Example with a string
+text = "Hello, welcome to Python programming!"
+# Using 'in' operator with string
+print("Is 'Python' in the text? ", 'Python' in text)  # True
+# Using 'not in' operator with string
+print("Is 'Java' not in the text? ", 'Java' not in text)  # True
