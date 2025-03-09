@@ -1,0 +1,11 @@
+#ord()
+print(ord('A'))  # Output: 65 (Unicode code point of 'A')
+print(ord('a'))  # Output: 97 (Unicode code point of 'a')
+print(ord('😊')) # Output: 128522 (Unicode code point of '😊')
+
+print ("----------------------------------------------------")
+
+#chr()
+print(chr(65))   # Output: 'A'
+print(chr(97))   # Output: 'a'
+print(chr(128522)) # Output: '😊'
