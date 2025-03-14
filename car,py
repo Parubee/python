@@ -1,0 +1,30 @@
+class Car:
+    def __init__(self, brand, model, year, mileage=0):
+        self.brand = brand
+        self.model = model
+        self.year = year
+        self.mileage = mileage
+
+    def display_info(self):
+        print(f"Car Details: {self.year} {self.brand} {self.model}, Mileage: {self.mileage} km")
+
+    def drive(self, km):
+        if km > 0:
+            self.mileage += km
+            print(f"You drove {km} km. New mileage: {self.mileage} km")
+        else:
+            print("Distance must be positive!")
+
+# Creating two car objects
+car1 = Car("Toyota", "Corolla", 2020)
+car2 = Car("Honda", "Civic", 2019, 5000)
+
+# Display initial details
+car1.display_info()
+car2.display_info()
+
+# Driving car1 for 150 km
+car1.drive(150)
+
+# Display updated details
+car1.display_info()
